@@ -1,0 +1,77 @@
+/* inline never accept padding top bottom */
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* vertical control /placement---> align item */
+    align-items: end;
+    height: 100vh;/*view height */
+    /* width :   percentage */
+
+}
+/* footer is tag name so access direcly  */
+footer{
+    display: flex; /*flex control children not grand children,or itself */
+    /* horizontal placement control by justify content */
+    justify-content: space-between;
+    background-color: black;
+    padding:40px 0px; /*top right left bottom */
+    
+}
+/* left is id selector  */
+#left{
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+}
+#right{
+    width: 35%;
+    /* background-color: yellow; */
+    display: flex;
+    border-left: 2px solid grey;
+}
+
+ul{
+    
+    list-style-type: none; /* remove circle*/
+    margin: 0; /* by default ul have margin*/
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 3px;
+}
+
+li{
+    color: white;
+}
+h5{
+    color: grey;
+    margin-top: 0;/* by default a have margin*/
+
+}
+
+#menu{
+    /* background-color: aqua; */
+    padding:0;
+    margin: 0;
+    position:absolute;
+    top: 0%;
+    left: 100%;
+    display: none;
+}
+
+#drop{
+    position: relative;  
+
+}
+#drop:hover #menu{
+    
+    display: block;
+    background-color: pink;
+    color: ;
+}
